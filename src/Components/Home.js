@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { animate, motion } from "framer-motion";
-import DotsMobileStepper from "./AnimatedRoutes";
-import Card from "./Card";
+import { motion } from "framer-motion";
 import Tabs from "./Tabs";
 import Responsibilities from "./Responsibilities";
 import Destinations from "./Destinations";
@@ -24,16 +22,15 @@ const Home = () => {
         className="content-container container "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        // exit={{ opacity: 0 }}
-        transition={{ duration: 0.3, ease: "linear" }}
+        transition={{ duration: 0, ease: "linear" }}
       >
         <img src={logo} className="logo-build" alt="Build Logo" />
         <div className="overlay">
           <div className="content">
-            <h4 className={textDecoration}>BUILD HOUSE</h4>
-            <p className={textDecoration}>answer key for all your questions.</p>
+            <p className="text serious-text-image ">BUILD HOUSE</p>
+            <p className="text serious-text-image">answer key for all your questions.</p>
             <h4>
-              <NavLink to="about" className="show-details subdued-italic">
+              <NavLink to="about" className="show-details serious-text-image">
                 SHOW DETAILS➜
               </NavLink>
             </h4>

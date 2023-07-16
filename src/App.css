@@ -68,11 +68,11 @@ li {
 }
 
 .logo-build {
-  width: 100%;
+  width: 120%;
 }
 .logo-build :hover {
   background-color: black;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .card-container {
@@ -108,7 +108,7 @@ li {
   bottom: 0;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(70, 47, 47, 0.39);
   cursor: pointer;
 }
 
@@ -123,7 +123,7 @@ li {
 }
 
 .container:hover .overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 .show-details {
   position: absolute;
@@ -141,7 +141,7 @@ li {
 }
 .show-details:hover {
   transition: color 0.3s ease;
-  color: white;
+  color: #6A0000;
 }
 .build_1 {
   width: 300px;
@@ -565,6 +565,9 @@ h1 {
   .contact-bg {
     background-color: #8C5032;
   }
+  .project-bg {
+    background-color: black;
+  }
   
   .nav-link-style-third {
     color: #AC7051;
@@ -574,7 +577,6 @@ h1 {
   .nav-style-third {
     color: #000;
     text-decoration: none;
-    /* Добавленное свойство */
   }
   .nav-style-third :hover {
     color: #ABC2C1; /* Измените цвет при наведении по вашему выбору */
@@ -634,4 +636,30 @@ h1 {
   padding: 10px;
   border-radius: 0; 
   margin-right: 80px;
+}
+.bg-color-project {
+  background-color: #707070
+}
+  
+.nav-link-style-project {
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-style-last {
+  color: #000;
+  text-decoration: none;
+  /* Добавленное свойство */
+}
+.nav-style-last :hover {
+  color: #08518E; /* Измените цвет при наведении по вашему выбору */
+}
+.serious-text-image {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
 }

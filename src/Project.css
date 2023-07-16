@@ -1,0 +1,127 @@
+/* Project.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bg-color-project {
+  background-color: black;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content-project {
+  width:  100%;
+  max-width: 15000px;
+  padding: 100px;
+  margin-left: 4%;
+}
+
+.image-column-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.image-item-project {
+  width: 220px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 1s ease;
+}
+
+.image-item-project:hover {
+  transform: scale(1.1);
+}
+
+.image-item-project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 1s ease;
+}
+
+.image-item-project:hover img {
+  filter: brightness(110%); /* Adjust brightness value as needed */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+.image-item-project:hover .image-overlay {
+  opacity: 10;
+}
+
+.image-overlay h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 20px; /* Adjust the font size as desired */
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-item-project:hover .image-overlay h3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-description {
+  display: none;
+}
+.underline-project {
+  border-bottom: 1px solid rgb(74, 106, 182);
+  text-align: center;
+}
+.serious-project {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  line-height: 2;
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+}
+.serious-project-modal {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 2;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+.underline-project-modal {
+  border-bottom: 1px solid rgb(50, 65, 100);
+  text-align: center;
+}
+.text-project {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: #455567;
+}
