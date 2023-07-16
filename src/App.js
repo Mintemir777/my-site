@@ -14,8 +14,8 @@ const theme = createTheme({
           scrollbarWidth: "thin",
         },
         '::-webkit-scrollbar': {
-          width: '5px',
-          height: '5px', // Set the height for the horizontal scrollbar
+          width: '4px',
+          height: '4px', // Set the height for the horizontal scrollbar
         },
         '::-webkit-scrollbar-track': {
           background: '#ffffff',

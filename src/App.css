@@ -428,21 +428,27 @@ h1 {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 500;
+  margin-left: 16%;
 }
 .card-sub-title {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 300;
+  text-align: center;
+  margin-left: 16%;
 }
 .card-info {
   font-size: 16px;
   line-height: 25px;
   margin: 40px 0;
   font-weight: 400;
+  margin-left: 16%;
 }
 .image-container {
+  align-items: center;
   display: flex;
   margin: 60px;
+  margin-left: 15%;
 }
 .container-icons {
   padding: 15px 9%;

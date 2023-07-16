@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "@material-ui/core/Button";
-import Modal from "@material-ui/core/Modal";
 import { makeStyles } from "@material-ui/core/styles";
 import projects from "./ProjectsData";
 import "../Project.css";
-import { darkScrollbar } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -28,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: "84vh", // Set maximum height for the modal content
     overflowY: "scroll",
   },
-  overlay: {
+  overlayproject: {
     background: "rgba(0, 0, 0, 0.6)",
     position: "fixed",
     top: 0,
@@ -145,7 +143,7 @@ const Project = () => {
       <AnimatePresence>
         {openModal && selectedProject && (
           <motion.div
-            className={classes.overlay}
+            className={classes.overlayproject}
             // Set initial animation state
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
