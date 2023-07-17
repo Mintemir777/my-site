@@ -1,9 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import "./App.css";
-import Header from "./Components/Header";
-import AnimatedRoutes from "./Components/AnimatedRoutes";
+import Header from "./Components/NavigationPart/Header";
+import AnimatedRoutes from "./Components/NavigationPart/AnimatedRoutes";
 
 const theme = createTheme({
   components: {
