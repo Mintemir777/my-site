@@ -2,48 +2,9 @@
   margin: 0;
   text-decoration: none;
   font-family: Arial, sans-serif;
+  list-style-type: none; /* Переместил с li */
 }
 
-.nav {
-  display: flex;
-  padding: 10px;
-  margin-right: 0;
-  font-size: 16px;
-  align-items: center;
-  font-size: 14px;
-}
-.nav-link-style {
-  color: pink;
-  transition: color 0.3s ease;
-}
-.nav-style {
-  color: #000;
-  text-decoration: none;
-  /* Добавленное свойство */
-}
-.nav-style :hover {
-  color: rgb(203, 67, 89); /* Измените цвет при наведении по вашему выбору */
-}
-li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 10px;
-}
-
-
-.logo {
-  width: 80px; /* Измените размер логотипа по вашему желанию */
-  display: flex;
-  background-repeat: no-repeat;
-  padding: 0;
-}
-
-li {
-  padding: 10px; /* Измените отступы по вашему желанию */
-  margin: 0 5px;
-  font-weight: bold;
-  color: white; /* Измените цвет текста по вашему желанию */
-}
 .text-container {
   display: flex;
   flex-direction: column;
@@ -141,7 +102,7 @@ li {
 }
 .show-details:hover {
   transition: color 0.3s ease;
-  color: #6A0000;
+  color: #6a0000;
 }
 .build_1 {
   width: 300px;
@@ -373,19 +334,7 @@ h1 {
   width: 600px;
   height: auto;
 }
-.serious-nav {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.5;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-}
-.nav-text {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  color: #333333;
-}
+
 .card {
   width: 320px;
   height: 500px;
@@ -496,9 +445,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.gray-bg {
-  background-color: #253f5b;
-}
+
 .container-about {
   display: flex;
   align-items: center;
@@ -511,94 +458,59 @@ h1 {
   border-radius: 20px;
   box-shadow: 0 0 10px 5px rgba(37, 63, 91, 0.2);
   height: auto;
-  margin-right: 20px
-;}
+  margin-right: 20px;
+}
 .p-about {
   text-align: right;
-  color: #7590AD;
-
+  color: #7590ad;
 }
 .text-color-about {
-  color: #7590AD ;
+  color: #7590ad;
   font-family: "Arial", sans-serif;
-  }
-  .size-about-choose {
-    font-size: 90px;
-    text-align: left;
-  }
+}
+.size-about-choose {
+  font-size: 90px;
+  text-align: left;
+}
 
 .stepper-center {
   display: flex;
   margin-top: 70px;
-  margin-left: 565px ;
+  margin-left: 565px;
 }
 .size-portret {
   font-size: 90px;
   text-align: center;
 }
 .text-color-about-second {
-  color: #C5A980
-  ;
+  color: #c5a980;
 }
 .underline-about {
-    border-bottom: 1px solid #6086AD	;
-  }
-  .picture-about-men {
-    border-radius: 10px;
-    height: auto;
-    margin-right: 20px
-  }
-  .p-about-men {
-    text-align: left;
-  
-  }
-  .down-nav {
-    background-color: #777;
-  }
-  .nav-link-style-second {
-    color: #6086AD;
-    transition: color 0.3s ease;
-  }
+  border-bottom: 1px solid #6086ad;
+}
+.picture-about-men {
+  border-radius: 10px;
+  height: auto;
+  margin-right: 20px;
+}
+.p-about-men {
+  text-align: left;
+}
+.down-nav {
+  background-color: #777;
+}
 
-  .nav-style-second {
-    color: #000;
-    text-decoration: none;
-    /* Добавленное свойство */
-  }
-  .nav-style-second :hover {
-    color: #C5A980; /* Измените цвет при наведении по вашему выбору */
-  }
-  .contact-bg {
-    background-color: #8C5032;
-  }
-  .project-bg {
-    background-color: black;
-  }
-  
-  .nav-link-style-third {
-    color: #AC7051;
-    transition: color 0.3s ease;
-  }
-
-  .nav-style-third {
-    color: #000;
-    text-decoration: none;
-  }
-  .nav-style-third :hover {
-    color: #ABC2C1; /* Измените цвет при наведении по вашему выбору */
-  }
-  .text-color-contact {
-    color: #D3B383 ;
-    }
-    .text-color-contact-second {
-      color: #ABC2C1 ;
-      }
-      .size-contact {
-        font-size: 70px;
-        text-align: left;
-        background-color: #8C5032;
-      }
-
+.text-color-contact {
+  color: #d3b383;
+}
+.text-color-contact-second {
+  color: #abc2c1;
+}
+.size-contact {
+  font-size: 70px;
+  text-align: left;
+  background-color: #8c5032;
+}
 
 .serious-contact {
   text-transform: uppercase;
@@ -615,8 +527,7 @@ h1 {
   box-shadow: 0 0 10px 5px rgba(37, 63, 91, 0.2);
   height: auto;
   background-size: cover;
-  
-;}
+}
 .form-contact {
   align-items: center;
   margin-left: auto;
@@ -629,7 +540,7 @@ h1 {
   line-height: 1.5;
   text-align: left;
   padding: 10px;
-  border-radius: 0; 
+  border-radius: 0;
 }
 .box-optimization {
   margin-left: 100px;
@@ -640,25 +551,13 @@ h1 {
   line-height: 1.5;
   text-align: center;
   padding: 10px;
-  border-radius: 0; 
+  border-radius: 0;
   margin-right: 80px;
 }
 .bg-color-project {
-  background-color: #707070
+  background-color: #707070;
 }
-  
-.nav-link-style-project {
-  color: white;
-  transition: color 0.3s ease;
-}
-.nav-style-last {
-  color: #000;
-  text-decoration: none;
-  /* Добавленное свойство */
-}
-.nav-style-last :hover {
-  color: #08518E; /* Измените цвет при наведении по вашему выбору */
-}
+
 .serious-text-image {
   text-transform: uppercase;
   letter-spacing: 2px;

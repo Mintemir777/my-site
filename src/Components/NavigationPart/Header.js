@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "./logoimage.png";
+import "./Header.css";
 
 const Header = () => {
   const location = useLocation();
@@ -10,66 +11,50 @@ const Header = () => {
   useEffect(() => {
     setIsAboutPage(location.pathname === "/about");
     setIsContactPage(location.pathname === "/contacts");
-    setIsProjectPage(location.pathname === "/projects")
+    setIsProjectPage(location.pathname === "/projects");
   }, [location]);
 
+  const styles = {
+    headerBg: isAboutPage
+      ? "gray-bg"
+      : isContactPage
+      ? "contact-bg"
+      : isProjectPage
+      ? "project-bg"
+      : "",
+    linkText: isAboutPage
+      ? "nav-link-about"
+      : isContactPage
+      ? "nav-link-contact"
+      : isProjectPage
+      ? "nav-link-projects"
+      : "nav-link-home",
+  };
+
   return (
-    <header
-    className={
-      isAboutPage ? "gray-bg" : isContactPage ? "contact-bg" : isProjectPage ? "project-bg" :  ""
-    }
-    >
+    <header className={styles.headerBg}>
       <ul className="nav">
         <img src={logo} className="logo" alt="Logo" />
-        <div className={isAboutPage ? "nav-style-second" :  isContactPage ? "nav-style-third" :  isProjectPage ? "nav-style-last" : "nav-style"}>
-          <li className="serious-nav nav-text">
-            <NavLink
-              to="/"
-              end
-              className={
-                isAboutPage ? "nav-link-style-second" : isContactPage ? "nav-link-style-third" :  isProjectPage ? "nav-link-style-project" : "nav-link-style"
-              }
-              >
-              HOME
-            </NavLink>
-          </li>
-        </div>
-        <div className={isAboutPage ? "nav-style-second" : isContactPage ? "nav-style-third" :  isProjectPage ? "nav-style-last" : "nav-style"}>
-          <li className="serious-nav nav-text">
-            <NavLink
-              to="/about"
-              className={
-                isAboutPage ? "nav-link-style-second" : isContactPage ? "nav-link-style-third" :  isProjectPage ? "nav-link-style-project" : "nav-link-style"
-              }
-              >
-              ABOUT
-            </NavLink>
-          </li>
-        </div>
-        <div className={isAboutPage ? "nav-style-second" : isContactPage ? "nav-style-third" :  isProjectPage ? "nav-style-last" : "nav-style"}>
-          <li className="serious-nav nav-text">
-            <NavLink
-              to="/contacts"
-              className={
-                isAboutPage ? "nav-link-style-second" : isContactPage ? "nav-link-style-third" :  isProjectPage ? "nav-link-style-project" : "nav-link-style"
-              }
-              >
-              CONTACTS
-            </NavLink>
-          </li>
-        </div>
-        <div className={isAboutPage ? "nav-style-second" : isContactPage ? "nav-style-third" :  isProjectPage ? "nav-style-last" : "nav-style"}>
-          <li className="serious-nav nav-text">
-            <NavLink
-              to="/projects"
-              className={
-                isAboutPage ? "nav-link-style-second" : isContactPage ? "nav-link-style-third" :  isProjectPage ? "nav-link-style-project" : "nav-link-style"
-              }
-              >
-              PROJECTS
-            </NavLink>
-          </li>
-        </div>
+        <li className="nav-link">
+          <NavLink to="/" end className={styles.linkText}>
+            HOME
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink to="/about" className={styles.linkText}>
+            ABOUT
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink to="/contacts" className={styles.linkText}>
+            CONTACTS
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink to="/projects" className={styles.linkText}>
+            PROJECTS
+          </NavLink>
+        </li>
       </ul>
     </header>
   );

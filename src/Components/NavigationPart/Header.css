@@ -1,0 +1,63 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+
+  gap: 20px;
+}
+
+.gray-bg {
+  background-color: #253f5b;
+}
+.contact-bg {
+  background-color: #8c5032;
+}
+.project-bg {
+  background-color: black;
+}
+
+.logo {
+  width: 80px; /* Измените размер логотипа по вашему желанию */
+  background-repeat: no-repeat;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-link-home {
+  color: pink;
+  transition: color 0.3s ease;
+}
+.nav-link-home:hover {
+  color: rgb(203, 67, 89);
+}
+
+.nav-link-about {
+  color: #6086ad;
+  transition: color 0.3s ease;
+}
+.nav-link-about:hover {
+  color: #c5a980;
+}
+
+.nav-link-contact {
+  color: #ac7051;
+  transition: color 0.3s ease;
+}
+.nav-link-contact:hover {
+  color: #abc2c1;
+}
+
+.nav-link-projects {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.nav-link-projects:hover {
+  color: #08518e;
+}
