@@ -22,20 +22,6 @@
   opacity: 1;
 }
 
-.content-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 150px;
-}
-
-.logo-build {
-  width: 120%;
-}
-.logo-build :hover {
-  background-color: black;
-  opacity: 1;
-}
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -52,58 +38,12 @@
 .card h3 {
   margin-top: 0;
 }
-.container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 10px 20px rgb(40, 40, 40);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  background: rgba(70, 47, 47, 0.39);
-  cursor: pointer;
-}
-
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-.show-details {
-  position: absolute;
-  color: white;
-  top: 50%;
-  left: 50%;
-  margin-top: 150px;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
 
 .subdued-italic {
   color: rgba(255, 255, 255, 0.5);
   font-style: italic;
 }
-.show-details:hover {
-  transition: color 0.3s ease;
-  color: #6a0000;
-}
+
 .build_1 {
   width: 300px;
 }
@@ -556,15 +496,4 @@ h1 {
 }
 .bg-color-project {
   background-color: #707070;
-}
-
-.serious-text-image {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.5;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  color: black;
-  font-weight: bold;
 }
